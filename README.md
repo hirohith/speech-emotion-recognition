@@ -272,36 +272,32 @@ The system extracts MFCC features from the uploaded speech signal and uses the t
 
 # 📁 Project Structure
 
+```text
 speech-emotion-recognition/
 │
 ├── dataset/
-│   ├── Actor_01
-│   ├── Actor_02
-│   └── ...
-│
 ├── models/
-│   ├── emotion_rf_model.pkl
-│   ├── cnn_emotion_model.keras
-│   └── cnn_lstm_emotion.keras
-│
-├── screenshots/
-│   ├── dataset_structure.png
-│   ├── training_results.png
-│   ├── accuracy_comparison.png
-│   └── streamlit_app.png
-│
 ├── outputs/
+├── screenshots/
 │
 ├── app.py
 ├── predict.py
 ├── feature_extraction.py
+├── feature_extraction_v2.py
 ├── train_model.py
+├── train_model_v2.py
+├── cnn_model.py
+├── cnn_model_augmented.py
+├── cnn_lstm_model.py
+├── prepare_data.py
+├── prepare_data_augmented.py
 ├── save_rf_model.py
+├── augmentation_test.py
+├── accuracy_comparison.py
 ├── requirements.txt
 └── README.md
----
+```
 
----
 
 # 🛠 Technologies Used
 
