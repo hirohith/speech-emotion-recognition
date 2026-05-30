@@ -1,0 +1,15 @@
+venv/
+__pycache__/
+*.pyc
+
+X.npy
+y.npy
+X_aug.npy
+y_aug.npy
+
+models/*.pkl
+models/*.keras
+
+.ipynb_checkpoints/
+
+.DS_Store
