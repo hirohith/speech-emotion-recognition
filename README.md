@@ -6,6 +6,15 @@ Speech Emotion Recognition (SER) is an important application of Artificial Intel
 
 The system analyzes speech audio, extracts meaningful acoustic features, and predicts the emotional state of the speaker. A web-based interface is developed using Streamlit to allow users to upload audio files and receive emotion predictions in real time.
 
+
+## 🏆 Final Model
+
+**Selected Model:** Random Forest Classifier
+
+**Accuracy:** 69.94%
+
+The Random Forest model achieved the highest accuracy among all tested approaches and was selected for deployment in the Streamlit application.
+
 ---
 
 # 🎯 Objectives
@@ -245,6 +254,55 @@ Result Display
 
 ---
 
+# 🎯 Demo
+
+The deployed Streamlit application allows users to upload WAV audio recordings and receive real-time emotion predictions.
+
+### Example Output
+
+| Input Audio | Predicted Emotion |
+|------------|------------------|
+| Happy Speech | 😊 Happy |
+| Sad Speech | 😢 Sad |
+| Angry Speech | 😠 Angry |
+| Fearful Speech | 😨 Fearful |
+| Neutral Speech | 😐 Neutral |
+
+The system extracts MFCC features from the uploaded speech signal and uses the trained Random Forest classifier to predict the speaker's emotional state.
+
+# 📁 Project Structure
+
+speech-emotion-recognition/
+│
+├── dataset/
+│   ├── Actor_01
+│   ├── Actor_02
+│   └── ...
+│
+├── models/
+│   ├── emotion_rf_model.pkl
+│   ├── cnn_emotion_model.keras
+│   └── cnn_lstm_emotion.keras
+│
+├── screenshots/
+│   ├── dataset_structure.png
+│   ├── training_results.png
+│   ├── accuracy_comparison.png
+│   └── streamlit_app.png
+│
+├── outputs/
+│
+├── app.py
+├── predict.py
+├── feature_extraction.py
+├── train_model.py
+├── save_rf_model.py
+├── requirements.txt
+└── README.md
+---
+
+---
+
 # 🛠 Technologies Used
 
 ### Programming Language
@@ -331,8 +389,10 @@ Through this project, the following concepts were explored:
 
 # ✅ Conclusion
 
-This project successfully developed a Speech Emotion Recognition System capable of identifying emotional states from speech recordings. Multiple machine learning and deep learning approaches were implemented and evaluated using the RAVDESS dataset.
+# ✅ Conclusion
 
-Among all tested models, the Random Forest classifier achieved the highest performance with an accuracy of 69.94%, outperforming CNN and CNN-LSTM architectures on the available dataset. The final system was deployed as an interactive Streamlit web application that enables users to upload speech recordings and receive emotion predictions in real time.
+This project successfully developed an end-to-end Speech Emotion Recognition system using audio signal processing and machine learning techniques.
 
-The project demonstrates the complete machine learning pipeline, including data preprocessing, feature extraction, model development, performance evaluation, and deployment, making it a practical application of Artificial Intelligence in speech analysis.
+Multiple models including Random Forest, CNN, CNN with Augmentation, and CNN-LSTM were implemented and evaluated. Among them, the Random Forest classifier achieved the best performance with 69.94% accuracy and was selected for deployment.
+
+The final solution was integrated into a Streamlit web application capable of predicting emotions from uploaded speech recordings in real time.
