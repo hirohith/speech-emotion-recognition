@@ -392,3 +392,11 @@ This project successfully developed an end-to-end Speech Emotion Recognition sys
 Multiple models including Random Forest, CNN, CNN with Augmentation, and CNN-LSTM were implemented and evaluated. Among them, the Random Forest classifier achieved the best performance with 69.94% accuracy and was selected for deployment.
 
 The final solution was integrated into a Streamlit web application capable of predicting emotions from uploaded speech recordings in real time.
+
+
+## 👨‍💻 Author
+
+Sheru Rohith
+
+LinkedIn: https://www.linkedin.com/in/sheru-rohith-535b5432b/
+GitHub: https://github.com/hirohith
